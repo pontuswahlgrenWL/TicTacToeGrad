@@ -31,7 +31,7 @@ Tests 🍅-1:
 
 Tests 🍅-2: 
 1. Win/end scenarios. 4 tests.
-   1. Player X horizontal ❌
+   1. Player X horizontal ✅
    2. Player X vertical
    3. Player X diagonal
    4. Tie

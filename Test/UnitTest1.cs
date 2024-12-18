@@ -10,12 +10,12 @@ public class UnitTest1
     public void CreateEmptyBoard_ShouldReturnEmptyBoard()
     {   
         // Act
-        var board = TicTacToeGrad.Board.CreateBoard();
+        var board = new Board();
 
         // Assert
-        Assert.Equal(3, board.GetLength(0));
-        Assert.Equal(3, board.GetLength(1));
-        foreach (var cell in board)
+        Assert.Equal(3, board.board.GetLength(0));
+        Assert.Equal(3, board.board.GetLength(1));
+        foreach (var cell in board.board)
         {
             Assert.Equal(' ', cell);
         }
@@ -37,12 +37,11 @@ public class UnitTest1
     public void PlayerX_ShouldWinWithThreeEqualMarkersHorizontally()
     {   
         // Arrange
-        var board = TicTacToeGrad.Board.CreateBoard();
+        var board = new Board();
         var player1 = new Player("Player 1", 'X');
-        var player2 = new Player("Player 2", 'O');
         
         // Act
-        var result = new Game();
+        var result = new Game(board, player1);
 
         // Assert
         Assert.Equal(player1.Name, result.Winner);
