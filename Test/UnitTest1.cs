@@ -4,7 +4,7 @@ namespace Test;
 
 public class UnitTest1
 {
-    [Fact]
+    [Fact(DisplayName="Creation of empty board should be of size 3x3 with empty cells")]
     public void CreateEmptyBoard_ShouldReturnEmptyBoard()
     {   
         // Act
