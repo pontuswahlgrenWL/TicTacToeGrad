@@ -28,7 +28,7 @@ public class UnitTest1
         var player2 = new Player("Player 2", 'O');
 
         // Assert
-        Assert.Equal('X', player1.Symbol);
-        Assert.Equal('O', player2.Symbol);
+        Assert.Equal('X', player1.Mark);
+        Assert.Equal('O', player2.Mark);
     }
 }

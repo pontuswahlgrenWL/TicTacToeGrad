@@ -20,11 +20,11 @@ public class Board
 public class Player
 {
     public string Name { get;}
-    public char Symbol { get;}
+    public char Mark { get;}
 
-    public Player(string name, char symbol)
+    public Player(string name, char mark)
     {
         Name = name;
-        Symbol = symbol;
+        Mark = mark;
     }
 }
