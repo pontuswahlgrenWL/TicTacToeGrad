@@ -1,6 +1,9 @@
 ﻿namespace TicTacToeGrad;
 
-public class Class1
+public class Board
 {
-
+    public static char[,] CreateBoard()
+    {
+        throw new NotImplementedException();
+    }
 }
