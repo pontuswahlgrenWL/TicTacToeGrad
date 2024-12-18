@@ -24,6 +24,7 @@ public class Player
 
     public Player(string name, char symbol)
     {
-        throw new NotImplementedException();
+        Name = name;
+        Symbol = symbol;
     }
 }

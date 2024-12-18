@@ -27,7 +27,7 @@ User stories:
 
 Tests 🍅-1:
 1. 3x3 board creation ✅
-2. Have two players, X and O
+2. Have two players, X and O ✅
 
 Tests 🍅-2: 
 1. Win/end scenarios. 4 tests as above.
