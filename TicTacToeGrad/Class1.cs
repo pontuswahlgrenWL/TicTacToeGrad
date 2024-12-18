@@ -28,3 +28,12 @@ public class Player
         Mark = mark;
     }
 }
+
+public class Game
+{
+    public string Winner { get;}
+    public Game()
+    {
+        throw new NotImplementedException();
+    } 
+}

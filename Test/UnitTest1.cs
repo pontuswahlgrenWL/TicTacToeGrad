@@ -1,3 +1,4 @@
+using System.Security.Policy;
 using FluentAssertions;
 using TicTacToeGrad;
 
@@ -30,5 +31,20 @@ public class UnitTest1
         // Assert
         Assert.Equal('X', player1.Mark);
         Assert.Equal('O', player2.Mark);
+    }
+    
+    [Fact(DisplayName="Player X should win with three equal markers horizontally")]
+    public void PlayerX_ShouldWinWithThreeEqualMarkersHorizontally()
+    {   
+        // Arrange
+        var board = TicTacToeGrad.Board.CreateBoard();
+        var player1 = new Player("Player 1", 'X');
+        var player2 = new Player("Player 2", 'O');
+        
+        // Act
+        var result = new Game();
+
+        // Assert
+        Assert.Equal(player1.Name, result.Winner);
     }
 }

@@ -30,7 +30,11 @@ Tests 🍅-1:
 2. Have two players, X and O ✅
 
 Tests 🍅-2: 
-1. Win/end scenarios. 4 tests as above.
+1. Win/end scenarios. 4 tests.
+   1. Player X horizontal ❌
+   2. Player X vertical
+   3. Player X diagonal
+   4. Tie
 
 Tests 🍅-3:
 1. Taking turns, first X then O, then X again.
